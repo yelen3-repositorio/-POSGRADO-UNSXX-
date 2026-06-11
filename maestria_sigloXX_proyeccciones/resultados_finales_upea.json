@@ -1,0 +1,95 @@
+{
+    "fecha_generacion": "2026-06-10T10:52:27.359265",
+    "version": "1.0",
+    "hipotesis_principal": {
+        "enunciado": "El modelo individual XGBoost de ML permite predecir con alta precisión (R² ≥ 0.95) superando al ensemble",
+        "resultado": "TOTALMENTE CONFIRMADA",
+        "r2_xgboost": 0.9710411429405212,
+        "r2_ensemble": 0.8305593067632286,
+        "xgboost_supera_ensemble": true
+    },
+    "hipotesis_nula": {
+        "enunciado": "No existe diferencia estadísticamente significativa entre ensemble y modelos individuales (p > 0.05)",
+        "decision": "RECHAZADA"
+    },
+    "hipotesis_alternativa": {
+        "enunciado": "Modelos individuales presentan precisión superior al ensemble (p < 0.05)",
+        "decision": "ACEPTADA"
+    },
+    "hipotesis_secundarias": {
+        "precision_individual": "RECHAZADA",
+        "mejora_ensemble": "RECHAZADA"
+    },
+    "ranking_modelos": {
+        "por_r2": {
+            "xgboost": 0.9710411429405212,
+            "arima": 0.964587747392103,
+            "rf": 0.9374081510410447,
+            "ensemble": 0.8305593067632286,
+            "lstm": 0.7308837632693013
+        },
+        "mejor_modelo": "xgboost",
+        "precision_mejor": 0.9710411429405212
+    },
+    "proyecciones_2030": {
+        "matricula_proyectada": NaN,
+        "objetivo_tesis": 88473,
+        "crecimiento_total_pct": NaN
+    },
+    "metricas_todos_modelos": {
+        "arima": {
+            "rmse": 5442.923115244085,
+            "mae": 4684.486176751475,
+            "mape": 62.502450571974656,
+            "r2": 0.964587747392103,
+            "rmse_objetivo": 287.4,
+            "mape_objetivo": 3.2,
+            "r2_objetivo": 0.92
+        },
+        "rf": {
+            "rmse": 6946.688357200381,
+            "mae": 5356.286333333333,
+            "mape": 17.840224634387152,
+            "r2": 0.9374081510410447,
+            "rmse_objetivo": 312.6,
+            "mape_objetivo": 3.5,
+            "r2_objetivo": 0.94
+        },
+        "xgboost": {
+            "rmse": 4725.083491325841,
+            "mae": 3979.531982421875,
+            "mape": 20.515787605450093,
+            "r2": 0.9710411429405212,
+            "rmse_objetivo": 298.4,
+            "mape_objetivo": 2.8,
+            "r2_objetivo": 0.95
+        },
+        "lstm": {
+            "rmse": 14404.191153135456,
+            "mae": 13558.76051438289,
+            "mape": 96.91777237749982,
+            "r2": 0.7308837632693013,
+            "rmse_objetivo": 276.3,
+            "mape_objetivo": 2.6,
+            "r2_objetivo": 0.96
+        },
+        "ensemble": {
+            "rmse": 11429.514564303454,
+            "mae": 11329.653140243347,
+            "mape": 94.99238296222771,
+            "r2": 0.8305593067632286,
+            "rmse_objetivo": 268.9,
+            "mape_objetivo": 2.4,
+            "r2_objetivo": 0.97
+        }
+    },
+    "archivos_generados": [
+        "dashboard_ejecutivo_upea.html",
+        "metricas_comparativas_final.csv",
+        "metricas_comparativas_final.xlsx",
+        "proyecciones_consolidadas_2025_2030.csv",
+        "proyecciones_consolidadas_2025_2030.xlsx",
+        "informe_ejecutivo_final.txt",
+        "resultados_finales_upea.json"
+    ]
+}

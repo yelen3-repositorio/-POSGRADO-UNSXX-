@@ -1,0 +1,60 @@
+{
+    "modelo_optimizado": {
+        "parametros": {
+            "bootstrap": true,
+            "ccp_alpha": 0.0,
+            "criterion": "squared_error",
+            "max_depth": 10,
+            "max_features": null,
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 300,
+            "n_jobs": -1,
+            "oob_score": false,
+            "random_state": 42,
+            "verbose": 0,
+            "warm_start": false
+        },
+        "rmse_test": 6934.535653885104,
+        "mae_test": 5306.424444444445,
+        "mape_test": 17.06023710701191,
+        "r2_test": 0.9376269588449062,
+        "cv_rmse_mean": 7153.912553960513,
+        "cv_rmse_std": 929.8247797922016,
+        "cv_r2_mean": 0.8059041015613152,
+        "cv_r2_std": 0.14101493260623393
+    },
+    "modelo_tesis": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 15
+        },
+        "rmse_test": 6946.688357200381,
+        "mae_test": 5356.286333333333,
+        "mape_test": 17.840224634387152,
+        "r2_test": 0.9374081510410447
+    },
+    "importancia_caracteristicas": {
+        "a\u00f1o_numero": 0.010541277733978085,
+        "semestre_dummy": 0.020201080569169777,
+        "periodo_numero": 0.007977539887316145,
+        "matricula_lag1": 0.018056096723798983,
+        "matricula_lag2": 0.43564757044299596,
+        "matricula_lag4": 0.41417513980975107,
+        "media_movil_4": 0.010592150536144406,
+        "media_movil_8": 0.009469302602873935,
+        "pib_departamental_millones_bs": 0.009424722801970743,
+        "poblacion_el_alto": 0.011102003706299976,
+        "graduados_secundaria": 0.0034217388215492346,
+        "tasa_desempleo_juvenil": 0.004545056974872465,
+        "crecimiento_poblacional": 0.041478922188804876,
+        "ratio_graduados_poblacion": 0.00336739720047427
+    },
+    "proyeccion_2030": 27167.596666666668,
+    "crecimiento_proyectado": 241.55892213561313
+}

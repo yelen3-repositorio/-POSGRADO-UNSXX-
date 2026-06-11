@@ -1,0 +1,38 @@
+{
+    "modelo_tesis": {
+        "arquitectura": "LSTM(128) -> Dropout(0.2) -> LSTM(64) -> Dense(1)",
+        "rmse_test": 6929.684330620616,
+        "mae_test": 5719.881857596333,
+        "mape_test": 31.728426976068175,
+        "r2_test": 0.9377141992762265,
+        "epochs_trained": 61,
+        "best_epoch": 41,
+        "best_val_loss": 0.0018229142297059298
+    },
+    "mejor_modelo": "Tesis",
+    "configuracion": {
+        "ventana_temporal": 8,
+        "horizonte_prediccion": 1,
+        "normalizacion": "MinMaxScaler",
+        "caracteristicas_usadas": [
+            "matricula_total",
+            "a\u00f1o_numero",
+            "semestre_dummy",
+            "pib_departamental_millones_bs",
+            "poblacion_el_alto",
+            "graduados_secundaria",
+            "tasa_desempleo_juvenil",
+            "crecimiento_poblacional",
+            "ratio_graduados_poblacion"
+        ]
+    },
+    "residuos_stats": {
+        "media": 5639.011320499078,
+        "std": 4027.6638699539135,
+        "shapiro_pvalue": 0.46306767307450203,
+        "asimetria": 0.19096858464463332,
+        "curtosis": -1.2321023260154549
+    },
+    "proyeccion_2030": 61719.42574602366,
+    "crecimiento_proyectado": 675.9545605484494
+}
